@@ -1,0 +1,12 @@
+actionid: py27
+msg: installpkg
+cmdargs: [local('/home/artur/Projects/steelkiwi/marrow-task/.tox/py27/bin/pip'), 'install', '-U', '--no-deps', '/home/artur/Projects/steelkiwi/marrow-task/.tox/dist/marrow.task-1.0.0a1.zip']
+env: {'PATH': '/home/artur/Projects/steelkiwi/marrow-task/.tox/py27/bin:/home/artur/virtualenvs/mtask/bin:/home/artur//Sources/tmuxifier/bin:/home/artur//.gem/ruby/2.0.0/bin:/home/artur//.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl', 'VIRTUAL_ENV': '/home/artur/Projects/steelkiwi/marrow-task/.tox/py27', 'PYTHONHASHSEED': '501486371'}
+
+Processing ./.tox/dist/marrow.task-1.0.0a1.zip
+Installing collected packages: marrow.task
+  Found existing installation: marrow.task 1.0.0a1
+    Uninstalling marrow.task-1.0.0a1:
+      Successfully uninstalled marrow.task-1.0.0a1
+  Running setup.py install for marrow.task
+Successfully installed marrow.task-1.0.0a1

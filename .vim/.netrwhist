@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/artur/virtualenvs/rita/lib/python2.7/site-packages/PasteScript-1.7.5-py2.7.egg/paste'
+let g:netrw_dirhist_2='/home/artur/virtualenvs/rita/lib/python2.7/site-packages/PasteScript-1.7.5-py2.7.egg/paste/script'
+let g:netrw_dirhist_3='/home/artur/Projects/steelkiwi/rita/src/marrow'
+let g:netrw_dirhist_4='/home/artur/Projects/steelkiwi/marrow-tags/marrow'
+let g:netrw_dirhist_5='/home/artur/Projects/steelkiwi/rita/src/marrow/widgets'
+let g:netrw_dirhist_6='/home/artur/Projects/steelkiwi/marrow-tags/marrow'
+let g:netrw_dirhist_7='/home/artur/.zshfuncs'

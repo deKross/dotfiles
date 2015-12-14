@@ -1,0 +1,10 @@
+actionid: py27
+msg: getenv
+cmdargs: ['/home/artur/virtualenvs/mtask/bin/python2', '-m', 'virtualenv', '--python', '/home/artur/virtualenvs/mtask/bin/python2.7', 'py27']
+env: {'PATH': '/home/artur/Projects/steelkiwi/marrow-task/.tox/py27/bin:/home/artur/virtualenvs/mtask/bin:/home/artur//Sources/tmuxifier/bin:/home/artur//.gem/ruby/2.0.0/bin:/home/artur//.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl', 'VIRTUAL_ENV': '/home/artur/Projects/steelkiwi/marrow-task/.tox/py27', 'PYTHONHASHSEED': '3805384728'}
+
+Using real prefix '/usr'
+New python executable in py27/bin/python2.7
+Also creating executable in py27/bin/python
+Installing setuptools, pip...done.
+Running virtualenv with interpreter /home/artur/virtualenvs/mtask/bin/python2.7

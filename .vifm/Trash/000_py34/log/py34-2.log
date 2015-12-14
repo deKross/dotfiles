@@ -1,0 +1,22 @@
+actionid: py34
+msg: installpkg
+cmdargs: [local('/home/artur/Projects/steelkiwi/marrow-task/.tox/py34/bin/pip'), 'install', '/home/artur/Projects/steelkiwi/marrow-task/.tox/dist/marrow.task-1.0.0a1.zip']
+env: {'PATH': '/home/artur/Projects/steelkiwi/marrow-task/.tox/py34/bin:/home/artur/virtualenvs/mtask/bin:/home/artur//Sources/tmuxifier/bin:/home/artur//.gem/ruby/2.0.0/bin:/home/artur//.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl', 'VIRTUAL_ENV': '/home/artur/Projects/steelkiwi/marrow-task/.tox/py34', 'PYTHONHASHSEED': '501486371'}
+
+Processing ./.tox/dist/marrow.task-1.0.0a1.zip
+Collecting mongoengine (from marrow.task==1.0.0a1)
+  Using cached mongoengine-0.9.0.tar.gz
+Collecting pytz (from marrow.task==1.0.0a1)
+  Using cached pytz-2015.4-py2.py3-none-any.whl
+Collecting marrow.package<2.0 (from marrow.task==1.0.0a1)
+  Using cached marrow.package-1.0.2-py2.py3-none-any.whl
+Collecting wrapt<2.0 (from marrow.task==1.0.0a1)
+  Using cached wrapt-1.10.4.tar.gz
+Collecting pymongo>=2.7.1 (from mongoengine->marrow.task==1.0.0a1)
+  Using cached pymongo-3.0.2.tar.gz
+Installing collected packages: pymongo, mongoengine, pytz, marrow.package, wrapt, marrow.task
+  Running setup.py install for pymongo
+  Running setup.py install for mongoengine
+  Running setup.py install for wrapt
+  Running setup.py install for marrow.task
+Successfully installed marrow.package-1.0.2 marrow.task-1.0.0a1 mongoengine-0.9.0 pymongo-3.0.2 pytz-2015.4 wrapt-1.10.4

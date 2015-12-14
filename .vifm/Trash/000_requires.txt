@@ -1,0 +1,15 @@
+apscheduler
+pymongo==2.8
+mongoengine==0.9.0
+pytz
+marrow.package<2.0
+wrapt<2.0
+pyyaml
+
+[development]
+coverage
+pytest
+pytest-cov
+pytest-spec
+pytest_cagoule
+pytest-flakes
