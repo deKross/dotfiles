@@ -1,0 +1,51 @@
+#!/bin/bash
+
+function get_custom_prompt_color {
+    local STATUS=$?
+    local STATUS_COLOR
+    local USER_COLOR
+    local DIR
+    local GIT_FLAGS
+    local GIT_PROMPT
+    local USER_CHAR
+    local PYTHON_VIRTUALENV
+    if [ $STATUS -eq 0 ]
+    then
+        STATUS_COLOR='33'
+    else
+        STATUS_COLOR='31'
+    fi
+    if [ "$PWD" == "$HOME" ]
+    then
+        DIR=":"
+    else
+        DIR="$(basename $PWD)"
+    fi
+    if [ $(whoami) == "root" ]
+    then
+        USER_CHAR="#"
+        USER_COLOR='34'
+    else
+        USER_CHAR=":"
+        USER_COLOR='33'
+    fi
+    if test -z "$VIRTUAL_ENV" ; then
+        PYTHON_VIRTUALENV=""
+    else
+        PYTHON_VIRTUALENV="[`basename \"$VIRTUAL_ENV\"`]"
+    fi
+    GIT_PROMPT=$(git branch --no-color 2> /dev/null | grep '*' | sed 's/\*//g' | sed 's/ //g')
+    if [ "$GIT_PROMPT" ]
+    then
+        GIT_FLAGS=$(git status --porcelain 2> /dev/null | cut -c1-2 | sed 's/ //g' | cut -c1 | sort | uniq -c)
+        if [ "$GIT_FLAGS" ]
+        then
+            GIT_FLAGS="$(echo $GIT_FLAGS | sed 's/ //g')"
+            GIT_PROMPT="${GIT_PROMPT} ${GIT_FLAGS}"
+        fi
+        GIT_PROMPT=" (\[\033[0;36m\]${GIT_PROMPT}\[\033[0;33m\])"
+    fi
+    PS1="\[\033[${STATUS_COLOR}m\]:\[\033[0;${USER_COLOR}m\] ${DIR}${PYTHON_VIRTUALENV}${GIT_PROMPT}${USER_CHAR} "
+}
+
+PROMPT_COMMAND=get_custom_prompt_color

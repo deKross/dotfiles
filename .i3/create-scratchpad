@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#tmux has-session -t scratchpad 2> /dev/null
+#if [ $? != 0 ]
+#then
+    #tmux new-session -s scratchpad
+    #tmux set-option -t scratchpad status off
+#fi
+#urxvtc -e bash -c "exec tmux attach -t scratchpad"
+urxvtc
+i3-msg 'floating enable' > /dev/null
+i3-msg 'move scratchpad' > /dev/null
+i3-msg 'scratchpad show' > /dev/null
+i3-msg 'resize grow width 41 px' > /dev/null
+i3-msg 'resize shrink height 247 px' > /dev/null
+i3-msg 'move down 319 px' > /dev/null

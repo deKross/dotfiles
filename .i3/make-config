@@ -1,0 +1,5 @@
+#!/usr/bin/sh
+cd ~/.i3
+cat base > config
+awk '{print "for_window [class=" $0 "] floating enable"}' floats >> config
+i3-msg -t command restart

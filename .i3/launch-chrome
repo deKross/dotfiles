@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+pidof chrome && exit
+exec google-chrome
