@@ -1,0 +1,43 @@
+[global_config]
+  borderless = True
+  enabled_plugins = InactivityWatch, TestPlugin, ActivityWatch, TerminalShot, APTURLHandler, LaunchpadBugURLHandler
+  geometry_hinting = False
+  title_hide_sizetext = True
+  title_transmit_fg_color = "#ffeede"
+[keybindings]
+  hide_window = None
+  switch_to_tab_1 = <Primary><Alt>1
+  switch_to_tab_10 = <Primary><Alt>KP_0
+  switch_to_tab_2 = <Primary><Alt>2
+  switch_to_tab_3 = <Primary><Alt>3
+  switch_to_tab_4 = <Primary><Alt>4
+  switch_to_tab_5 = <Primary><Alt>5
+  switch_to_tab_6 = <Primary><Alt>KP_6
+  switch_to_tab_7 = <Primary><Alt>7
+  switch_to_tab_8 = <Primary><Alt>KP_8
+  switch_to_tab_9 = <Primary><Alt>KP_9
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#110700"
+    background_darkness = 0.0
+    background_image = /home/artur/terminal.png
+    background_type = image
+    cursor_color = "#fff1c4"
+    font = PragmataPro 14
+    foreground_color = "#dddddd"
+    icon_bell = False
+    palette = "#000000:#ff2f00:#c4ff00:#ffd900:#00a2ff:#ff0054:#3c6798:#ffffff:#4c4c4c:#ff2f00:#a1ff00:#ffd900:#00a2ff:#ff0054:#3c6798:#ffcc66"
+    scroll_background = False
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+    word_chars = "-A-Za-z0-9,./?%&#:_="

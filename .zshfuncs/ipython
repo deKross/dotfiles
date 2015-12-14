@@ -1,0 +1,5 @@
+if [ -f "startup.py" ]; then
+    PYTHONSTARTUP=startup.py command ipython
+else
+    command ipython
+fi

@@ -1,0 +1,21 @@
+hsetroot -center ~/Dropbox/Buran-wall.png
+(sleep 1s && setxkbmap -layout us,ru -variant ,ruu -option grp:alt_shift_toggle,grp:rctrl_switch,nbsp:level3,lv3:ralt_switch,grp_led:caps -option ctrl:nocaps) &
+(sleep 1s && numlockx) &
+(sleep 1s && xfce4-panel) &
+#(sleep 1s && altyo --disable_hotkey) &
+(sleep 1s && compton -c -r 16 -l -24 -t -12 -G -b) &
+#(sleep 1s && xfdesktop) &
+(sleep 1s && terminator -m --hidden) &
+(sleep 1s && unclutter -idle 2 -root) &
+#(sleep 1s && xfce4-volumed-pulse) &
+(sleep 1s && synapse -s) &
+(sleep 1s && copyq) &
+(sleep 3s && skype) &
+(sleep 3s && google-chrome) &
+(sleep 5s && /bin/sh /home/artur/Apps/pycharm-5.0/bin/pycharm.sh) &
+(sleep 8s && slack) &
+(sleep 8s && dropbox) &
+(sleep 9s && joxi) &
+(sleep 1s && xscreensaver -no-splash -display :0.0) &
+(sleep 1s && xss-lock -- xscreensaver-command -lock) &
+
