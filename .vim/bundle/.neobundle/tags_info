@@ -2,6 +2,7 @@ DirDiff.vim
 IndexedSearch
 Tail-Bundle
 dwm.vim
+goyo.vim
 neobundle.vim
 nerdcommenter
 prolog.vim
@@ -17,7 +18,13 @@ vifm.vim
 vim-airline
 vim-buffergator
 vim-fugitive
+vim-gitgutter
+vim-oblique
+vim-peekaboo
+vim-pseudocl
 vim-repeat
 vim-rsi
 vim-unite-history
+vimfiler.vim
 vimproc.vim
+vinarise.vim

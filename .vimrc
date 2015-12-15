@@ -24,6 +24,8 @@ NeoBundle 'Shougo/unite-help'
 NeoBundle 'tacroe/unite-mark'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Shougo/unite-session'
+NeoBundle 'Shougo/vimfiler.vim'
+NeoBundle 'Shougo/vinarise.vim'
 NeoBundle 'tpope/vim-repeat'
 NeoBundle 'thinca/vim-unite-history'
 NeoBundle 'tpope/vim-rsi'
@@ -36,6 +38,11 @@ NeoBundle 'edkolev/promptline.vim'
 NeoBundle 'vifm/vifm.vim'
 NeoBundle 'adimit/prolog.vim'
 NeoBundle 'jeetsukumaran/vim-buffergator'
+NeoBundle 'junegunn/goyo.vim'
+NeoBundle 'junegunn/vim-peekaboo'
+NeoBundle 'junegunn/vim-pseudocl'
+NeoBundle 'junegunn/vim-oblique'
+NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'DirDiff.vim'
 NeoBundle 'Tail-Bundle'
 
@@ -235,6 +242,8 @@ let g:rbpt_colorpairs = [
     \ ]
 let g:rbpt_max            = 16
 let g:rbpt_loadcmd_toggle = 0
+
+let g:vimfiler_as_default_explorer = 1
 
 nnoremap <silent> <F2> :TagbarToggle<CR>
 nnoremap <silent> <F3> :BuffergatorToggle<CR>

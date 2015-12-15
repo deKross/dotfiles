@@ -15,7 +15,7 @@ antigen bundles <<EOBUNDLES
     history-substring-search
     common-aliases
     git-extras
-    colored-man
+    colored-man-pages
     cp
     extract
     fasd
