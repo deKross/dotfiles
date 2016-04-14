@@ -1,0 +1,16 @@
+OPTIONS=color, name:Tarks-K, gender:male, autopickup, rest_on_space, showexp, number_pad:0
+OPTIONS=pickup_types:$"%?!=/
+OPTIONS=dark_room, hilite_pile, lit_corridor, time, extmenu, DECgraphics
+AUTOPICKUP_EXCEPTION=">.*corpse.*"
+OPTIONS=menucolors
+MENUCOLOR=" blessed "=green
+MENUCOLOR=" holy "=green
+MENUCOLOR=" cursed "=red
+MENUCOLOR=" unholy "=red
+MENUCOLOR=" cursed .* (being worn)"=orange
+OPTIONS=statushilites
+#OPTIONS=hilite_status:"gold/updown/yellow/yellow"
+#OPTIONS=hilite_status:time/updown/blue/blue
+#OPTIONS=hilite_status:hitpoints/60%/orange/green
+#OPTIONS=hilite_status:hunger/updown/orange/red
+#OPTIONS=hilite_status:carrying-capacity/updown/orange/red
