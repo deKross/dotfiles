@@ -127,3 +127,5 @@ hi StatusLine ctermfg=234
 hi FoldColumn ctermbg=none
 hi DiffChange ctermbg=238
 hi DiffText ctermbg=242
+
+hi pythonSpaceError ctermfg=none ctermbg=none cterm=none term=none

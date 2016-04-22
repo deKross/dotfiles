@@ -1,8 +1,11 @@
 DirDiff.vim
 IndexedSearch
 Tail-Bundle
+YouCompleteMe
+ctrlp.vim
 dwm.vim
 goyo.vim
+gundo.vim
 neobundle.vim
 nerdcommenter
 prolog.vim
@@ -24,7 +27,9 @@ vim-peekaboo
 vim-pseudocl
 vim-repeat
 vim-rsi
+vim-startify
 vim-unite-history
+vim-virtualenv
 vimfiler.vim
 vimproc.vim
 vinarise.vim

@@ -28,14 +28,14 @@
 [profiles]
   [[default]]
     background_color = "#110700"
-    background_darkness = 0.0
-    background_image = /home/artur/terminal.png
+    background_darkness = 0.37
+    background_image = /home/artur/koshka-term.png
     background_type = image
     cursor_color = "#fff1c4"
-    font = PragmataPro 14
+    font = PragmataPro Mono 14
     foreground_color = "#dddddd"
     icon_bell = False
-    palette = "#000000:#ff2f00:#c4ff00:#ffd900:#00a2ff:#ff0054:#3c6798:#ffffff:#4c4c4c:#ff2f00:#a1ff00:#ffd900:#00a2ff:#ff0054:#3c6798:#ffcc66"
+    palette = "#000000:#ff2f00:#c4ff00:#ffd900:#00a2ff:#ff0054:#3c6798:#ffffff:#6b6b6b:#ff2f00:#a1ff00:#ffd900:#00a2ff:#ff0054:#3c6798:#ffcc66"
     scroll_background = False
     scrollbar_position = hidden
     show_titlebar = False

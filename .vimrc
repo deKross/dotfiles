@@ -35,6 +35,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'edkolev/promptline.vim'
 "NeoBundle 'davidhalter/jedi-vim'
+NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'vifm/vifm.vim'
 NeoBundle 'adimit/prolog.vim'
 NeoBundle 'jeetsukumaran/vim-buffergator'
@@ -43,6 +44,10 @@ NeoBundle 'junegunn/vim-peekaboo'
 NeoBundle 'junegunn/vim-pseudocl'
 NeoBundle 'junegunn/vim-oblique'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'sjl/gundo.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'jmcantrell/vim-virtualenv'
+NeoBundle 'mhinz/vim-startify'
 NeoBundle 'DirDiff.vim'
 NeoBundle 'Tail-Bundle'
 
@@ -189,8 +194,10 @@ let g:yankring_history_file       = ''
 let g:tex_flavor = 'latex'
 
 let g:python_version_2 = 1
-let g:python_highlight_all = 1
 let g:python_highlight_space_errors = 0
+let g:python_space_error_highlight = 0
+let g:python_highlight_all = 0
+
 let g:syntastic_python_checkers=[]
 
 let g:pymode_folding              = 0
@@ -211,8 +218,11 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#show_close_button = 0
 let g:airline#extensions#tabline#tab_nr_type = 2
+let g:airline#extensions#whitespace#enabled = 0
 "let g:airline#extensions#bufferline#overwrite_variables = 0
 "let g:bufferline_active_highlight = 'airline_c'
+
+let g:vimfiler_as_default_explorer = 1
 
 let g:promptline_theme = 'airline'
 let g:promptline_preset = {
@@ -245,12 +255,13 @@ let g:rbpt_loadcmd_toggle = 0
 
 let g:vimfiler_as_default_explorer = 1
 
+
 nnoremap <silent> <F2> :TagbarToggle<CR>
 nnoremap <silent> <F3> :BuffergatorToggle<CR>
 nnoremap <silent> <F4> :BuffergatorTabsOpen<CR>
 nnoremap <silent> <F5> :YRShow<CR>
 nnoremap <silent> <F6> :UndotreeToggle<CR>
-nnoremap <silent> <F7> :NERDTreeToggle<CR>
+nnoremap <silent> <F7> :VimFilerExplorer<CR>
 
 nnoremap <Space> <PageDown>
 nnoremap <C-PageDown> :update!<CR>

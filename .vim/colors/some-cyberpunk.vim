@@ -50,6 +50,7 @@ hi link pythonPreCondit PreCondit
 hi link pythonException Exception
 hi link pythonOperator Operator
 hi link pythonDottedName pythonDecorator
+hi pythonSpaceError ctermfg=none ctermbg=none cterm=none term=none
 
 highlight airline_b_to_airline_c ctermbg=none
 highlight airline_c ctermbg=none

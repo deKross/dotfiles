@@ -23,6 +23,7 @@ antigen bundles <<EOBUNDLES
     virtualenvwrapper
     sublime
     vagrant
+    AdrieanKhisbe/diractions
 EOBUNDLES
 
 antigen bundle archlinux
@@ -96,6 +97,7 @@ alias django-coverage="coverage run --source='.' manage.py test"
 alias mtr='mtr -t'
 alias cbo='xclip -o -selection clipboard'
 alias cbi='xclip -i -selection clipboard'
+alias vim='nvim'
 
 source ~/shell_prompt.sh
 

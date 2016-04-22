@@ -12,8 +12,8 @@ hsetroot -center ~/Dropbox/Buran-wall.png
 (sleep 1s && copyq) &
 (sleep 3s && skype) &
 (sleep 3s && google-chrome) &
-(sleep 5s && /bin/sh /home/artur/Apps/pycharm-5.0/bin/pycharm.sh) &
-(sleep 8s && slack) &
+(sleep 5s && /bin/sh /home/artur/Apps/pycharm-2016.1.1/bin/pycharm.sh) &
+#(sleep 8s && slack) &
 (sleep 8s && dropbox) &
 (sleep 9s && joxi) &
 (sleep 1s && xscreensaver -no-splash -display :0.0) &

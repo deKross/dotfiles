@@ -348,7 +348,12 @@
     </keybind>
     <keybind key="XF86Mail">
       <action name="Execute">
-        <command>thunderbird</command>
+        <command>google-chrome https://inbox.google.com/u/1/?pli=1</command>
+      </action>
+    </keybind>
+    <keybind key="S-XF86Mail">
+      <action name="Execute">
+        <command>google-chrome https://inbox.google.com/u/0/?pli=1</command>
       </action>
     </keybind>
     <keybind key="W-Scroll_Lock">
