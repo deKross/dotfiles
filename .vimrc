@@ -34,8 +34,8 @@ NeoBundle 'bling/vim-airline'
 "NeoBundle 'bling/vim-bufferline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'edkolev/promptline.vim'
-"NeoBundle 'davidhalter/jedi-vim'
-NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'davidhalter/jedi-vim'
+"NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'vifm/vifm.vim'
 NeoBundle 'adimit/prolog.vim'
 NeoBundle 'jeetsukumaran/vim-buffergator'
@@ -50,6 +50,8 @@ NeoBundle 'jmcantrell/vim-virtualenv'
 NeoBundle 'mhinz/vim-startify'
 NeoBundle 'DirDiff.vim'
 NeoBundle 'Tail-Bundle'
+NeoBundle 'hdima/python-syntax'
+NeoBundle 'ervandew/supertab'
 
 call neobundle#end()
 "set rtp+=~/.vim/bundle/vundle/
@@ -109,7 +111,7 @@ NeoBundleCheck
 
 syntax on
 "colorscheme some-cyberpunk
-colorscheme monokai
+colorscheme janah
 
 set cinwords+=class
 set cinwords+=def
@@ -255,6 +257,14 @@ let g:rbpt_loadcmd_toggle = 0
 
 let g:vimfiler_as_default_explorer = 1
 
+let g:jedi#use_tabs_not_buffers = 1
+let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
 
 nnoremap <silent> <F2> :TagbarToggle<CR>
 nnoremap <silent> <F3> :BuffergatorToggle<CR>
@@ -296,8 +306,10 @@ command Rmts %s/\s\+$//e
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+"autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType python setlocal completeopt-=preview
+autocmd FileType python setlocal completeopt+=menu
 
 "autocmd BufEnter * let &titlestring = ' ' . expand("%:t")
 "set title

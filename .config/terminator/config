@@ -2,6 +2,7 @@
   borderless = True
   enabled_plugins = InactivityWatch, TestPlugin, ActivityWatch, TerminalShot, APTURLHandler, LaunchpadBugURLHandler
   geometry_hinting = False
+  inactive_color_offset = 1.0
   title_hide_sizetext = True
   title_transmit_fg_color = "#ffeede"
 [keybindings]
@@ -28,16 +29,18 @@
 [profiles]
   [[default]]
     background_color = "#110700"
-    background_darkness = 0.37
+    background_darkness = 0.06
     background_image = /home/artur/koshka-term.png
     background_type = image
     cursor_color = "#fff1c4"
     font = PragmataPro Mono 14
-    foreground_color = "#dddddd"
+    foreground_color = "#f1e0dc"
     icon_bell = False
-    palette = "#000000:#ff2f00:#c4ff00:#ffd900:#00a2ff:#ff0054:#3c6798:#ffffff:#6b6b6b:#ff2f00:#a1ff00:#ffd900:#00a2ff:#ff0054:#3c6798:#ffcc66"
+    palette = "#073642:#ff9998:#d3e171:#efdda8:#268bd2:#ff006d:#2aa198:#eee8d5:#002b36:#fa7d4a:#9fc59a:#9db7c0:#b7d3f5:#6c71c4:#acbfbf:#fdf6e3"
     scroll_background = False
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
     word_chars = "-A-Za-z0-9,./?%&#:_="
+  [[Other]]
+    background_image = None
